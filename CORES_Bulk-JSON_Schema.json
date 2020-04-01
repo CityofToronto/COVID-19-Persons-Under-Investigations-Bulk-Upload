@@ -1,0 +1,562 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "/",
+  "type": "object",
+  "definitions": {
+    "main": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "patient_ontario_health_card_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-?\\d{3}-?\\d{3}-?[A-Z]{2}$"
+        },
+        "patient_hospital_mrn": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_firstname": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        },
+        "patient_middlename": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_lastname": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        },
+        "patient_dateofbirth": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "patient_gender": {
+          "type": "string",
+          "enum": [
+            "Male",
+            "Female",
+            "Transgender",
+            "Other",
+            "Unknown"
+          ]
+        },
+        "full_address_text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_country": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_lat": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_long": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_postal_code": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_province": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_city": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_street_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_street_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_mailing_suite_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_email": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "reported_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "person_making_the_report": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        },
+        "reporting_phone_number": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        },
+        "reporting_phone_number_extension": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_onset_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "comments": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$",
+          "maxLength": 32767
+        },
+        "patient_hospital_told_patient_to_selfisolate": {
+          "type": "string",
+          "enum": [
+            "na",
+            "no",
+            "yes"
+          ]
+        }
+      },
+      "required": [
+        "patient_firstname",
+        "patient_lastname",
+        "patient_dateofbirth",
+        "patient_gender",
+        "reported_date",
+        "person_making_the_report",
+        "reporting_phone_number",
+        "patient_hospital_told_patient_to_selfisolate",
+        "patient_onset_date"
+      ]
+    },
+    "variation2a": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "reporting_organization": {
+          "type": "string",
+          "enum": [
+            "Hospital for Sick Children",
+            "Humber River Hospital",
+            "Michael Garron Hospital",
+            "Mount Sinai Hospital",
+            "North York General Hospital",
+            "Scarborough Health Network-Birchmount Hospital",
+            "Scarborough Health Network-Centenary Hospital",
+            "Scarborough Health Network-General Hospital",
+            "St. Joseph's Health Centre",
+            "St. Michael's Hospital",
+            "Sunnybrook Health Sciences Centre",
+            "Trillium Health Partners",
+            "UHN-Princess Margaret Hospital",
+            "UHN-Toronto Western Hospital",
+            "UHN-Toronto General Hospital",
+            "William Osler Health System"
+          ]
+        },
+        "reporting_organization_other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "reporting_organization"
+      ]
+    },
+    "variation2b": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "reporting_organization": {
+          "type": "string",
+          "enum": [
+            "Other"
+          ]
+        },
+        "reporting_organization_other": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "reporting_organization",
+        "reporting_organization_other"
+      ]
+    },
+    "variation3a": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "cpso_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "reporting_source": {
+          "type": "string",
+          "enum": [
+            "Hospital physician / Infection Prevention and Control",
+            "Assessment Centre"
+          ]
+        },
+        "reporting_source_other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "reporting_source"
+      ]
+    },
+    "variation3b": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "cpso_number": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        },
+        "reporting_source": {
+          "type": "string",
+          "enum": [
+            "Physician Office"
+          ]
+        },
+        "reporting_source_other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "cpso_number",
+        "reporting_source"
+      ]
+    },
+    "variation3c": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "cpso_number": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "reporting_source": {
+          "type": "string",
+          "enum": [
+            "Other"
+          ]
+        },
+        "reporting_source_other": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "reporting_source",
+        "reporting_source_other"
+      ]
+    },
+    "variation4a": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "patient_symptoms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Fever",
+              "Difficulty Breathing/SOB",
+              "Cough",
+              "Fatigue",
+              "Headache",
+              "Sore Throat"
+            ]
+          }
+        },
+        "patient_symptoms_other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "patient_symptoms"
+      ]
+    },
+    "variation4b": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "patient_symptoms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Fever",
+              "Difficulty Breathing/SOB",
+              "Cough",
+              "Fatigue",
+              "Headache",
+              "Sore Throat",
+              "Other"
+            ]
+          }
+        },
+        "patient_symptoms_other": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "patient_symptoms",
+        "patient_symptoms_other"
+      ]
+    },
+    "variation5a": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "patient_exposures": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Travel to an affected country",
+              "Travel to another country",
+              "Was on a cruise ship",
+              "Have close contact with a confirmed or probable case of COVID-19",
+              "Have close contact with a person with acute respiratory illness who has been to an affected area* within 14 days prior to their illness onset",
+              "Have laboratory exposure to biological material (e.g.primary clinical specimens, virus culture isolates) known to contain COVID-19",
+              "Other"
+            ]
+          }
+        },
+        "patient_exposures_other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_travel_affected_area": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        },
+        "patient_travel_other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "patient_exposures"
+      ]
+    },
+    "variation6a": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "patient_specimens_collected": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "Throat Swab",
+              "Nasopharyngeal Swab"
+            ]
+          }
+        },
+        "patient_specimen_collection_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
+    },
+    "variation7a": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "patient_health_status": {
+          "type": "string",
+          "enum": [
+            "Hospitalized, non-ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)",
+            "Admitted to ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)",
+            "ED Visit only and discharged",
+            "Currently in the ED (if being discharged please advise to self isolate)",
+            "Deceased"
+          ]
+        },
+        "patient_health_status_other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "patient_health_status"
+      ]
+    },
+    "variation7b": {
+      "additionalProperties": true,
+      "type": "object",
+      "properties": {
+        "patient_health_status": {
+          "type": "string",
+          "enum": [
+            "Other"
+          ]
+        },
+        "patient_health_status_other": {
+          "type": "string",
+          "pattern": "^[^<>]*$"
+        }
+      },
+      "required": [
+        "patient_health_status",
+        "patient_health_status_other"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/main"
+    },
+    {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/variation2a"
+        },
+        {
+          "$ref": "#/definitions/variation2b"
+        }
+      ]
+    },
+    {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/variation3a"
+        },
+        {
+          "$ref": "#/definitions/variation3b"
+        },
+        {
+          "$ref": "#/definitions/variation3c"
+        }
+      ]
+    },
+    {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/variation4a"
+        },
+        {
+          "$ref": "#/definitions/variation4b"
+        }
+      ]
+    },
+    {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/variation5a"
+        }
+      ]
+    },
+    {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/variation6a"
+        }
+      ]
+    },
+    {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/variation7a"
+        },
+        {
+          "$ref": "#/definitions/variation7b"
+        }
+      ]
+    }
+  ]
+}
