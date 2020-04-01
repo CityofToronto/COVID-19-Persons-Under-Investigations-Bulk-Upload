@@ -50,71 +50,71 @@
 
 ### 7. patient_gender 
 
-1. Male
-1. Female
-1. Transgender
-1. Other
-1. Unknown
+* Male
+* Female
+* Transgender
+* Other
+* Unknown
 
 ### 21. reporting_source
 
-1. Hospital physician / Infection Prevention and Control
-1. Assessment Centre
-1. Physician Office
-1. Other
+* Hospital physician / Infection Prevention and Control
+* Assessment Centre
+* Physician Office
+* Other
 
 ### 24. reporting_organization
 
-1. Hospital for Sick Children
-1. Humber River Hospital
-1. Michael Garron Hospital
-1. Mount Sinai Hospital
-1. North York General Hospital
-1. Scarborough Health Network-Birchmount Hospital
-1. Scarborough Health Network-Centenary Hospital
-1. Scarborough Health Network-General Hospital
-1. St. Joseph's Health Centre
-1. St. Michael's Hospital
-1. Sunnybrook Health Sciences Centre
-1. Trillium Health Partners
-1. UHN-Princess Margaret Hospital
-1. UHN-Toronto Western Hospital
-1. UHN-Toronto General Hospital
-1. William Osler Health System
-1. Other
+* Hospital for Sick Children
+* Humber River Hospital
+* Michael Garron Hospital
+* Mount Sinai Hospital
+* North York General Hospital
+* Scarborough Health Network-Birchmount Hospital
+* Scarborough Health Network-Centenary Hospital
+* Scarborough Health Network-General Hospital
+* St. Joseph's Health Centre
+* St. Michael's Hospital
+* Sunnybrook Health Sciences Centre
+* Trillium Health Partners
+* UHN-Princess Margaret Hospital
+* UHN-Toronto Western Hospital
+* UHN-Toronto General Hospital
+* William Osler Health System
+* Other
 
 ### 29. patient_symptoms
 
-1. Fever
-1. Difficulty Breathing/SOB
-1. Cough
-1. Fatigue
-1. Headache
-1. Sore Throat
-1. Other
+* Fever
+* Difficulty Breathing/SOB
+* Cough
+* Fatigue
+* Headache
+* Sore Throat
+* Other
 
 ### 32. patient_exposures
 
-1. Travel to an affected country
-1. Travel to another country
-1. Was on a cruise ship
-1. Have close contact with a confirmed or probable case of COVID-19
-1. Have close contact with a person with acute respiratory illness who has been to an affected area* within 14 days prior to their illness onset
-1. Have laboratory exposure to biological material (e.g.primary clinical specimens, virus culture isolates) known to contain COVID-19
-1. Other
+* Travel to an affected country
+* Travel to another country
+* Was on a cruise ship
+* Have close contact with a confirmed or probable case of COVID-19
+* Have close contact with a person with acute respiratory illness who has been to an affected area* within 14 days prior to their illness onset
+* Have laboratory exposure to biological material (e.g.primary clinical specimens, virus culture isolates) known to contain COVID-19
+* Other
 
 ### 34. patient_travel_affected_area
 
-1. China
-1. Iran
-1. Italy
-1. South Korea
-1. USA
+* China
+* Iran
+* Italy
+* South Korea
+* USA
 
 ### 39. patient_health_status
 
-1. Hospitalized, non-ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
-1. Admitted to ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
-1. ED Visit only and discharged
-1. Currently in the ED (if being discharged please advise to self isolate)
-1. Deceased
+* Hospitalized, non-ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
+* Admitted to ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
+* ED Visit only and discharged
+* Currently in the ED (if being discharged please advise to self isolate)
+* Deceased
