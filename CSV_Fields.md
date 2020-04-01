@@ -124,3 +124,4 @@
 * ED Visit only and discharged
 * Currently in the ED (if being discharged please advise to self isolate)
 * Deceased
+* Other
