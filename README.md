@@ -1,3 +1,7 @@
-# COVID-19-Persons-Under-Investigations-Bulk-Upload
+# COVID-19 Persons-Under-Investigations Bulk Upload Guidelines
 
-Information for organizations submitting bulk COVID-19 Persons Under Investigations data
+## CSV Upload file format
+
+The CSV upload **MUST** follow the required format. Each CSV field (column) is described in the [CSV_Fields.md](CSV_Fields.md) file. 
+
+For technical specification for how each  field will be validated upon upload, please review the [JSON-schema](CORES_Bulk-JSON_Schema.json) 
