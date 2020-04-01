@@ -1,3 +1,5 @@
+## Field list
+
 |*Col*|*Field (code)*|*Part*|*Description*|*Type*|
 | --- | --- | --- | --- | --- |
 |1|patient_ontario_health_card_number|1||String|
@@ -41,3 +43,18 @@
 |39|patient_health_status|3|Enter the current status of the patient exactly as it appears in the Rules/Options column to the right.|String|
 |40|patient_health_status_other|3|If none of the options accurately describes the patient status, then enter “Other” as the patient_health_status and describe the status here.|String|
 |41|comments|3|Any additional comments|String|
+
+## Field rules
+
+### 1. patient_ontario_health_card_number (String) REQUIRED
+Must be a valid OHCN. 
+Must be 10 digits, followed by 2 letters, acceptable format: ####-###-###-AA (dashes optional)
+
+### 3. patient_hospital_mrn (String) REQUIRED
+Max 50 chars
+
+### 5. patient_lastname (String) REQUIRED
+
+### 6. patient_dateofbirth (String) REQUIRED
+Format yyyy-mm-dd
+
