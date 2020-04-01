@@ -1,6 +1,6 @@
 ## Field list
 
-**REQUIRED fields are bolded.**
+**REQUIRED fields are bolded.** For multiple-choice fields, please see section at the bottom for valid options.
 
 |*Col*|*Field (code)*|*Part*|*Description*|*Type*|
 | --- | --- | --- | --- | --- |
@@ -56,3 +56,65 @@
 1. Other
 1. Unknown
 
+### 21. reporting_source
+
+1. Hospital physician / Infection Prevention and Control
+1. Assessment Centre
+1. Physician Office
+1. Other
+
+### 24. reporting_organization
+
+1. Hospital for Sick Children
+1. Humber River Hospital
+1. Michael Garron Hospital
+1. Mount Sinai Hospital
+1. North York General Hospital
+1. Scarborough Health Network-Birchmount Hospital
+1. Scarborough Health Network-Centenary Hospital
+1. Scarborough Health Network-General Hospital
+1. St. Joseph's Health Centre
+1. St. Michael's Hospital
+1. Sunnybrook Health Sciences Centre
+1. Trillium Health Partners
+1. UHN-Princess Margaret Hospital
+1. UHN-Toronto Western Hospital
+1. UHN-Toronto General Hospital
+1. William Osler Health System
+1. Other
+
+### 29. patient_symptoms
+
+1. Fever
+1. Difficulty Breathing/SOB
+1. Cough
+1. Fatigue
+1. Headache
+1. Sore Throat
+1. Other
+
+### 32. patient_exposures
+
+1. Travel to an affected country
+1. Travel to another country
+1. Was on a cruise ship
+1. Have close contact with a confirmed or probable case of COVID-19
+1. Have close contact with a person with acute respiratory illness who has been to an affected area* within 14 days prior to their illness onset
+1. Have laboratory exposure to biological material (e.g.primary clinical specimens, virus culture isolates) known to contain COVID-19
+1. Other
+
+### 34. patient_travel_affected_area
+
+1. China
+1. Iran
+1. Italy
+1. South Korea
+1. USA
+
+### 39. patient_health_status
+
+1. Hospitalized, non-ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
+1. Admitted to ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
+1. ED Visit only and discharged
+1. Currently in the ED (if being discharged please advise to self isolate)
+1. Deceased
