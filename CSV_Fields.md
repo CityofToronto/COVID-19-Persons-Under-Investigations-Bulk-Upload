@@ -85,23 +85,28 @@
 
 ### 29. patient_symptoms
 
-* Fever
-* Difficulty Breathing/SOB
-* Cough
-* Fatigue
-* Headache
-* Sore Throat
-* Other
+Fever
+Difficulty Breathing/SOB
+Cough
+Fatigue
+Headache
+Sore Throat
+Asymptomatic
+Other
 
 ### 32. patient_exposures
 
-* Travel to an affected country
-* Travel to another country
-* Was on a cruise ship
-* Have close contact with a confirmed or probable case of COVID-19
-* Have close contact with a person with acute respiratory illness who has been to an affected area* within 14 days prior to their illness onset
-* Have laboratory exposure to biological material (e.g.primary clinical specimens, virus culture isolates) known to contain COVID-19
-* Other
+Travel to an affected country
+Travel to another country
+Was on a cruise ship
+Have close contact with a confirmed or probable case of COVID-19
+Have close contact with a person with acute respiratory illness who has been to an affected area* within 14 days prior to their illness onset
+Have laboratory exposure to biological material (e.g.primary clinical specimens, virus culture isolates) known to contain COVID-19
+Health Care setting 
+Institutional Setting
+Community transmission 
+Unknown source
+Other
 
 ### 34. patient_travel_affected_area
 
@@ -113,8 +118,9 @@
 
 ### 39. patient_health_status
 
-* Hospitalized, non-ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
-* Admitted to ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
-* ED Visit only and discharged
-* Currently in the ED (if being discharged please advise to self isolate)
-* Deceased
+Hospitalized, non-ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
+Admitted to ICU (connect with Infection Prevention & Control to ensure appropriate precautions are in place)
+Admitted to ICU and Intubated
+ED Visit only and discharged
+Currently in the ED (if being discharged please advise to self isolate)
+Deceased
