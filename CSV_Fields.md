@@ -13,7 +13,7 @@
 |7|**patient_gender**|1|Enter one of the genders listed, exactly as it appears in the Rules/Options column to the right.|One-of|
 |8|**patient_mailing_street_number**|1|For addresses inside the City of Toronto, the address should be entered using these columns. Required, if the address is a city of Toronto Address.|String|
 |9|**patient_mailing_street_name**|1||String|
-|10|**patient_mailing_suite_number**|1||String|
+|10|patient_mailing_suite_number|1||String|
 |11|**patient_mailing_city**|1||String|
 |12|**patient_mailing_province**|1||String|
 |13|**patient_mailing_postal_code**|1||String|
